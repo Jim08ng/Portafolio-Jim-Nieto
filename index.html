@@ -268,6 +268,24 @@ footer { margin-top: 4rem; text-align: center; display: grid; justify-items: cen
 .item[hidden] { display: none !important; }
 .more-row { display: grid; justify-items: center; padding: .4rem 1.2rem 1rem; border-top: 1px solid var(--line); }
 .more-row .soft-btn span { color: inherit; }
+
+/* Prueba: secciones como menú desplegable */
+.sec { padding-block: 1.6rem 0; }
+.sec-sum { list-style: none; cursor: pointer; display: grid; justify-items: stretch; gap: .35rem; }
+.sec-sum::-webkit-details-marker { display: none; }
+.sec-sum h2 { margin: 0; }
+.sec-sum:hover h2 { color: var(--accent); }
+.sec-hint { justify-self: center; margin-top: 0; font-size: .82rem; font-weight: 600; letter-spacing: .06em; color: var(--navy); background: rgba(30, 22, 80, .08); border: 1px solid rgba(30, 22, 80, .3); border-radius: 999px; padding: .3rem 1rem; }
+.sec-d[open] > .sec-sum { margin-bottom: 1.4rem; }
+.sec-d[open] > .sec-sum .sec-hint { background: transparent; border-color: transparent; color: var(--accent); }
+.sec-d > .sec-sum { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + .5rem); }
+#contacto { padding-block-start: 3rem; }
+
+.sec-hint { background: transparent !important; border: 0 !important; padding: .2rem .4rem !important; color: var(--fg) !important; opacity: .55; transition: opacity .15s; }
+.sec-sum:hover .sec-hint { opacity: .9; }
+#close-exp { display: block; margin: 1.6rem auto 0; }
+.soft-btn { background: transparent !important; border: 0 !important; backdrop-filter: none !important; color: var(--fg) !important; opacity: .55; padding: .3rem .6rem !important; transition: opacity .15s; }
+.soft-btn:hover, .soft-btn:focus-visible { opacity: .9; background: transparent !important; }
 </style>
 </head>
 <body>
@@ -292,10 +310,11 @@ footer { margin-top: 4rem; text-align: center; display: grid; justify-items: cen
       </div>
     </div>
   </header>
-  <nav class="toc" aria-label="Secciones"><a href="#escenarios">Escenarios</a><span aria-hidden="true">·</span><a href="#experiencia">Experiencia</a><span aria-hidden="true">·</span><a href="#habilidades">Habilidades</a><span aria-hidden="true">·</span><a href="#formacion">Formación</a><span aria-hidden="true">·</span><a href="#contacto">Contacto</a></nav>
 
-  <section id="escenarios">
-    <h2>Escenarios</h2>
+  <section id="escenarios" class="sec">
+    <details class="sec-d" open>
+      <summary class="sec-sum"><h2>Escenarios</h2><span class="toggle sec-hint" aria-hidden="true"><span class="closed">Ver escenarios ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+      <div class="sec-body">
     <div class="groups">
 
       <details class="group" id="mambako">
@@ -497,33 +516,45 @@ footer { margin-top: 4rem; text-align: center; display: grid; justify-items: cen
       </details>
 
     </div>
+      </div>
+    </details>
   </section>
-  <section id="experiencia">
-    <h2>Experiencia</h2>
+  <section id="experiencia" class="sec">
+    <details class="sec-d">
+      <summary class="sec-sum"><h2>Experiencia</h2><span class="toggle sec-hint" aria-hidden="true"><span class="closed">Ver experiencia ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+      <div class="sec-body">
     <ol class="jobs">
       <li class="job"><div class="dates">Ene 2026 – <span class="live">hoy</span></div><div><h3>Director musical, grupo de alabanza</h3><p class="org">Asociación Católica Cristo Liberador</p><p>Transcribo, arreglo y enseño el repertorio para batería, piano, guitarra y voces.</p></div></li>
       <li class="job"><div class="dates">Jul 2024 – <span class="live">hoy</span></div><div><h3>Artista intérprete</h3><p class="org">Agrupación artística Mambako</p><p>Toco el trisurdo en formato batucada, con música y danza, en festivales, eventos y contrataciones privadas.</p></div></li>
-      <li class="job extra" hidden><div class="dates">Jun 2025 – 2026</div><div><h3>Ingeniero de sonido en vivo</h3><p class="org">Colectivo Cultural Caminito Engativeño y Festival Cultural Faunos</p><p>Montaje de equipos, prueba de sonido y mezcla durante las presentaciones.</p></div></li>
-      <li class="job extra" hidden><div class="dates">May 2024 – Dic 2025</div><div><h3>Profesor de música</h3><p class="org">Escuela Musical Faunos</p><p>Clases individuales y grupales de guitarra, piano, técnica vocal, percusión e iniciación musical.</p></div></li>
-      <li class="job extra" hidden><div class="dates">Ago – Dic 2024</div><div><h3>Director de coro infantil</h3><p class="org">Escuela Musical Faunos</p><p>Audición, selección y dirección de niños de 5 a 14 años para la temporada navideña.</p></div></li>
-      <li class="job extra" hidden><div class="dates">Dic 2020 – Jul 2024</div><div><h3>Director</h3><p class="org">Batucada Clown, grupo itinerante</p><p>Repertorio de rock, baladas, folclor colombiano y música navideña para vientos y percusión, con puesta en escena clown.</p></div></li>
-      <li class="job extra" hidden><div class="dates">Dic 2023 – Jul 2024</div><div><h3>Artista intérprete y formador</h3><p class="org">Barbukana</p><p>Intérprete del repertorio y formador en música, baile y teatro para los grupos de iniciación.</p></div></li>
-      <li class="job extra" hidden><div class="dates">2018</div><div><h3>Profesor de guitarra</h3><p class="org">George Washington School · Academia Musical En Sus Manos</p><p>Cursos vacacionales para niños de 10 a 15 años.</p></div></li>
+      <li class="job"><div class="dates">Jun 2025 – 2026</div><div><h3>Ingeniero de sonido en vivo</h3><p class="org">Colectivo Cultural Caminito Engativeño y Festival Cultural Faunos</p><p>Montaje de equipos, prueba de sonido y mezcla durante las presentaciones.</p></div></li>
+      <li class="job"><div class="dates">May 2024 – Dic 2025</div><div><h3>Profesor de música</h3><p class="org">Escuela Musical Faunos</p><p>Clases individuales y grupales de guitarra, piano, técnica vocal, percusión e iniciación musical.</p></div></li>
+      <li class="job"><div class="dates">Ago – Dic 2024</div><div><h3>Director de coro infantil</h3><p class="org">Escuela Musical Faunos</p><p>Audición, selección y dirección de niños de 5 a 14 años para la temporada navideña.</p></div></li>
+      <li class="job"><div class="dates">Dic 2020 – Jul 2024</div><div><h3>Director</h3><p class="org">Batucada Clown, grupo itinerante</p><p>Repertorio de rock, baladas, folclor colombiano y música navideña para vientos y percusión, con puesta en escena clown.</p></div></li>
+      <li class="job"><div class="dates">Dic 2023 – Jul 2024</div><div><h3>Artista intérprete y formador</h3><p class="org">Barbukana</p><p>Intérprete del repertorio y formador en música, baile y teatro para los grupos de iniciación.</p></div></li>
+      <li class="job"><div class="dates">2018</div><div><h3>Profesor de guitarra</h3><p class="org">George Washington School · Academia Musical En Sus Manos</p><p>Cursos vacacionales para niños de 10 a 15 años.</p></div></li>
     </ol>
-    <button type="button" class="soft-btn" id="more-jobs" aria-expanded="false" aria-controls="experiencia"><span class="closed">Ver más experiencia (6) ▾</span><span class="opened">Ver menos ▴</span></button>
+    <button type="button" class="soft-btn" id="close-exp">Ver menos ▴</button>
+      </div>
+    </details>
   </section>
 
-  <section id="habilidades">
-    <h2>Habilidades</h2>
+  <section id="habilidades" class="sec">
+    <details class="sec-d">
+      <summary class="sec-sum"><h2>Habilidades</h2><span class="toggle sec-hint" aria-hidden="true"><span class="closed">Ver habilidades ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+      <div class="sec-body">
     <div class="skills">
       <div><h3>Instrumentos</h3><ul class="tags"><li>Guitarra</li><li>Piano</li><li>Bajo</li><li>Percusión</li><li>Clarinete</li><li>Voz</li></ul></div>
       <div><h3>Software</h3><ul class="tags"><li>Ableton Live 11</li><li>MuseScore</li><li>Finale</li><li>Kdenlive</li></ul></div>
       <div><h3>Dirección</h3><ul class="tags"><li>Cuerdas pulsadas</li><li>Percusión afrobrasileña</li><li>Coro</li></ul></div>
     </div>
+      </div>
+    </details>
   </section>
 
-  <section id="formacion">
-    <h2>Formación</h2>
+  <section id="formacion" class="sec">
+    <details class="sec-d">
+      <summary class="sec-sum"><h2>Formación</h2><span class="toggle sec-hint" aria-hidden="true"><span class="closed">Ver formación ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+      <div class="sec-body">
     <ul class="edu">
       <li><strong>Maestro en Música · Universidad de Cundinamarca</strong><span>Plan de estudios terminado, pendiente de grado</span></li>
       <li><strong>SENA · Certificados de competencia laboral</strong><span>Nivel intermedio en las tres normas · 2026</span>
@@ -535,6 +566,8 @@ footer { margin-top: 4rem; text-align: center; display: grid; justify-items: cen
         </ul>
       </li>
     </ul>
+      </div>
+    </details>
   </section>
 
   <section id="contacto">
@@ -691,7 +724,7 @@ footer { margin-top: 4rem; text-align: center; display: grid; justify-items: cen
 
 (function () {
   var btn = document.getElementById('more-jobs');
-  btn.addEventListener('click', function () {
+  if (btn) btn.addEventListener('click', function () {
     var open = btn.getAttribute('aria-expanded') !== 'true';
     document.querySelectorAll('.job.extra').forEach(function (li) { li.hidden = !open; });
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -716,6 +749,37 @@ footer { margin-top: 4rem; text-align: center; display: grid; justify-items: cen
     var open = btn.getAttribute('aria-expanded') !== 'true';
     document.querySelectorAll('.mk-extra').forEach(function (li) { li.hidden = !open; });
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+
+(function () {
+  var secs = Array.prototype.slice.call(document.querySelectorAll('details.sec-d'));
+  var ready = false;
+  setTimeout(function () { ready = true; }, 600);
+  secs.forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var sum = d.querySelector('summary');
+      if (d.open) {
+        secs.forEach(function (o) { if (o !== d && o.open) { o.dataset.auto = '1'; o.open = false; } });
+      } else {
+        d.querySelectorAll('video').forEach(function (v) { try { v.pause(); } catch (e) {} });
+        if (d.dataset.auto) { delete d.dataset.auto; return; }
+      }
+      if (!ready) return;
+      requestAnimationFrame(function () { requestAnimationFrame(function () {
+        sum.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'center' });
+      }); });
+    });
+  });
+})();
+
+(function () {
+  var b = document.getElementById('close-exp');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var d = document.querySelector('#experiencia details.sec-d');
+    d.open = false;
   });
 })();
 </script>
