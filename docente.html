@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portafolio docente de Jim Edward Nieto Galeano: experiencia en enseñanza musical y dirección de ensambles, escenarios y contacto.">
+<meta property="og:title" content="Jim Nieto · Docente">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Portafolio docente de Jim Edward Nieto Galeano: experiencia en enseñanza musical y dirección de ensambles, escenarios y contacto.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Jim Nieto · Docente</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@400;500;600&family=Noto+Music&display=swap">
+<style>
+/* Layout: programa de mano impreso. Portada enmarcada con las fotos como marca de agua; títulos sobre pentagrama; cierre con clave de sol y doble barra.
+   Diseño de un solo tema (papel claro), elegido a propósito: todos los colores están definidos aquí. */
+:root {
+  --bg: #F4EADF;
+  --surface: #FFFBF4;
+  --fg: #2B1D18;
+  --soft: #4A3A32;
+  --muted: #6B5A50;
+  --line: #D5C3AF;
+  --frame: #C9B6A2;
+  --staff: #B8A08A;
+  --accent: #7A2E2E;
+  --navy: #1E1650;
+  --gold: #7A2E2E;
+  --display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --body: "Work Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "Work Sans", "Segoe UI", system-ui, sans-serif;
+  --group: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--body); font-size: 1rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 4rem;
+}
+.wrap { max-width: 50rem; margin: 0 auto; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+/* Portada: programa enmarcado con fotos en marca de agua */
+header { padding-block: 2.5rem 0; }
+.cover { border: 1px solid var(--frame); padding: 6px; }
+.cover-in { position: relative; overflow: hidden; border: 1px solid var(--frame); padding: 3rem 1.25rem; text-align: center; display: grid; justify-items: center; gap: 1rem; }
+.cover-in > * { position: relative; }
+.cover-in > .wm { position: absolute; top: 0; height: 100%; width: 52%; object-fit: cover; filter: grayscale(1) sepia(.4); opacity: .16; pointer-events: none; max-width: none; }
+.wm-l { left: 0; object-position: 30% center; }
+.wm-r { right: 0; object-position: 45% center; }
+.staff-notes { width: 100%; max-width: 30rem; height: 65px; background: repeating-linear-gradient(180deg, #8F7660 0 1px, transparent 1px 16px); }
+.staff-notes i { position: absolute; width: 20px; height: 14px; border-radius: 50%; }
+.role { font-family: var(--body); font-size: .8rem; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--accent); margin: 0; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(3rem, 11vw, 6.25rem); line-height: .92; margin: 0; text-wrap: balance; }
+h1 em { color: var(--accent); }
+.instr { margin: 0; font-size: 1.05rem; color: #3A2A22; }
+.lede { max-width: 36rem; margin: 0; font-size: 1.02rem; line-height: 1.6; color: var(--soft); }
+
+section { padding-block: 3.25rem 0; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + .5rem); }
+h2 {
+  font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 6vw, 2.85rem); line-height: 1.1;
+  margin: 0 0 1.5rem; display: flex; align-items: center; gap: 1.1rem; text-align: center; text-wrap: balance;
+}
+h2::before, h2::after { content: ""; flex: 1 1 2rem; min-width: 1.5rem; height: 33px; background: repeating-linear-gradient(180deg, var(--staff) 0 1px, transparent 1px 8px); }
+
+/* Escenarios */
+.groups { display: grid; gap: 10px; }
+.group { background: transparent; border: 0; border-top: 1px solid var(--line); }
+.group:last-child { border-bottom: 1px solid var(--line); }
+.groups { gap: 0 !important; }
+.group > summary { padding-inline: 0 !important; }
+#escenarios .gname { font-size: calc(1.55rem - 1.33px); }
+#escenarios .what { font-size: calc(1rem - 1.33px); }
+#escenarios .where { font-size: calc(.88rem - 1.33px); }
+#escenarios .when { font-size: calc(.78rem - 1.33px); }
+#escenarios .toggle { font-size: calc(.85rem - 1.33px); }
+#escenarios figcaption { font-size: calc(.82rem - 1.33px); }
+#escenarios .ig { font-size: calc(.9rem - 1.33px); }
+#escenarios .soft-btn { font-size: calc(.88rem - 1.33px); }
+.viewer.small .viewer-img img { max-width: 80%; max-height: 80%; }
+/* Lista compacta en todas las agrupaciones: fecha · nombre · acción en un renglón */
+#escenarios .item.feature > details > summary,
+#escenarios .item:not(.feature) { display: flex; flex-wrap: wrap; align-items: baseline; gap: .1rem .75rem; padding: .5rem 1.2rem; line-height: 1.3; }
+#escenarios .item .when { flex: 0 0 6.6rem; }
+#escenarios .item .what { flex: 1 1 10rem; min-width: 0; order: 1; }
+#escenarios .item .toggle, #escenarios .item:not(.feature) > .links { order: 2; margin-top: 0; }
+#escenarios .feature-body > .links { order: -1; }
+#escenarios .item.feature > details > summary { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + .5rem); }
+#escenarios .item .where { order: 3; flex: 1 1 100%; padding-left: calc(6.6rem + .75rem); }
+#escenarios .item .feature-body { padding-top: .5rem; }
+@media (max-width: 560px) {
+  #escenarios .item .when { flex-basis: 100%; }
+  #escenarios .item .where { padding-left: 0; }
+}
+a.ig[href^="http"] { background: var(--accent); color: #FFFFFF; border-color: var(--accent); border-radius: 999px; padding: .4rem 1rem; box-shadow: 0 2px 0 rgba(43, 29, 24, .18); }
+a.ig[href^="http"]:hover { background: var(--navy); border-color: var(--navy); color: #FFFFFF; }
+.group > summary { list-style: none; cursor: pointer; padding: 1.1rem 1.2rem; display: grid; gap: .25rem; }
+.group summary::-webkit-details-marker, .feature summary::-webkit-details-marker { display: none; }
+.group > summary:hover .gname { color: var(--accent); }
+.gname { font-family: var(--group); font-weight: 800; font-size: 1.55rem; line-height: 1.1; text-wrap: balance; }
+.gname::before { content: ""; display: inline-block; width: .55em; height: .55em; border-radius: 50%; margin-right: .45em; vertical-align: .08em; background: var(--dot, var(--accent)); }
+#mambako { --dot: #1E1650; }
+#clave-de-sol { --dot: #E5338B; }
+#faunos { --dot: #E0B21A; }
+#coros { --dot: #19B3A6; }
+#otras { --dot: #7A2E2E; }
+.group[open] > summary { border-bottom: 1px solid var(--line); }
+.when { font-family: var(--body); font-size: .78rem; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
+.what { font-weight: 600; line-height: 1.3; }
+.where { font-size: .88rem; color: var(--muted); }
+.items { list-style: none; margin: 0; padding: 0; }
+.item { padding: .85rem 1.2rem; display: grid; gap: .2rem; border-top: 1px solid var(--line); min-width: 0; }
+.item:first-child { border-top: 0; }
+.item .links { margin-top: .35rem; }
+.item.feature { padding: 0; }
+.feature summary { list-style: none; cursor: pointer; padding: .85rem 1.2rem; display: grid; gap: .2rem; }
+.feature summary:hover .what { color: var(--accent); }
+.feature details[open] > summary, .item.feature details[open] > summary { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.toggle { margin-top: .35rem; font-size: .85rem; font-weight: 600; color: var(--accent); }
+.toggle .opened, details[open] > summary .toggle .closed { display: none; }
+details[open] > summary .toggle .opened { display: inline; }
+.feature-body { padding: .9rem 1.2rem 1.2rem; display: grid; gap: .9rem; justify-items: start; }
+.group-body { padding-top: 1.1rem; }
+.ig { font-size: .9rem; font-weight: 600; text-decoration: none; border: 1px solid var(--accent); padding: .3rem .8rem; }
+.ig:hover { background: var(--accent); color: var(--surface); }
+.links { display: flex; flex-wrap: wrap; gap: .5rem; }
+.clip { margin: 0; display: grid; gap: .4rem; }
+.clip video { display: block; width: 100%; max-width: 100%; height: auto; max-height: 80vh; background: #000; }
+.clip figcaption { font-size: .82rem; color: var(--muted); }
+.cert { margin: 0; width: 100%; max-width: 36rem; display: grid; gap: .4rem; }
+.cert img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.cert figcaption { font-size: .82rem; color: var(--muted); }
+.photos { display: grid; grid-template-columns: 1fr; gap: 10px; width: 100%; max-width: 28rem; }
+.photos.vids { max-width: 20rem; gap: 1.1rem; }
+.photos a { display: block; min-width: 0; }
+.photos img { display: block; width: 100%; max-width: 100%; height: auto; background: var(--line); }
+
+/* Experiencia */
+.jobs { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.6rem; }
+.job { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; }
+.job .dates { font-family: var(--mono); font-size: .78rem; color: var(--muted); padding-top: .2rem; font-variant-numeric: tabular-nums; }
+.job .dates .live { color: var(--accent); font-weight: 500; }
+.job h3 { margin: 0; font-size: 1.05rem; line-height: 1.35; }
+.job .org { margin: .1rem 0 .35rem; color: var(--muted); font-size: .92rem; }
+.job p { margin: 0; min-width: 0; }
+.job > div { min-width: 0; }
+
+/* Habilidades */
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1.5rem 2rem; }
+.skills h3 { font-family: var(--mono); font-weight: 500; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 .5rem; }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; margin: 0; padding: 0; }
+.tags { gap: .35rem 1.1rem !important; }
+.tags li { border: 0; background: transparent; padding: 0 0 0 1rem; border-radius: 0; font-size: .95rem; font-weight: 600; position: relative; }
+.tags li::before { content: ""; position: absolute; left: 0; top: .5em; width: .5em; height: .5em; border-radius: 50%; background: var(--dot, var(--accent)); }
+.skills > div:nth-child(1) { --dot: #1E1650; }
+.skills > div:nth-child(2) { --dot: #E5338B; }
+.skills > div:nth-child(3) { --dot: #19B3A6; }
+
+.edu { list-style: none; margin: 0; padding: 0; display: grid; gap: .9rem; }
+.edu li { display: grid; gap: .1rem; }
+.edu strong { font-weight: 600; }
+.edu span { color: var(--muted); font-size: .92rem; }
+.certs { list-style: none; margin: .6rem 0 0; padding: 0; display: grid; gap: 0; background: transparent; border: 0; border-top: 1px solid var(--line); }
+.certs li { background: transparent; border-bottom: 1px solid var(--line); padding: .6rem 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
+.certs li span { color: var(--fg); flex: 1 1 16rem; min-width: 0; font-weight: 600; position: relative; padding-left: 1.2rem; }
+.certs li span::before { content: ""; position: absolute; left: 0; top: .45em; width: .6em; height: .6em; border-radius: 50%; background: var(--dot, var(--accent)); }
+.certs li:nth-child(1) { --dot: #1E1650; }
+.certs li:nth-child(2) { --dot: #E5338B; }
+.certs li:nth-child(3) { --dot: #19B3A6; }
+.certs .ig { white-space: nowrap; }
+
+/* Contacto */
+.contact { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; background: transparent; border: 0; border-bottom: 1px solid var(--line); padding: .75rem 0; }
+.row { gap: .75rem 1.1rem !important; padding: 1rem 0 !important; }
+.row .ico { flex: 0 0 48px; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid var(--fg); color: var(--fg); display: flex; align-items: center; justify-content: center; }
+.row .kv { flex: 1 1 12rem; min-width: 0; display: grid; gap: .1rem; }
+.row .k { font-family: var(--body); font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.row .v { font-size: 1.35rem; font-weight: 600; user-select: all; min-width: 0; overflow-wrap: anywhere; line-height: 1.25; }
+.row button { font: inherit; font-size: .95rem; font-weight: 600; background: var(--accent); color: #FFFFFF; border: 0; border-radius: 999px; padding: .6rem 1.4rem; cursor: pointer; }
+.row button:hover { background: var(--navy); }
+.row .wa { font-size: .95rem; font-weight: 600; text-decoration: none; background: var(--accent); color: #FFFFFF; border-radius: 999px; padding: .6rem 1.4rem; box-shadow: 0 2px 0 rgba(43, 29, 24, .18); }
+.row .wa:hover { background: var(--navy); color: #FFFFFF; }
+@media (max-width: 560px) {
+  .row { display: grid !important; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; gap: .45rem .6rem !important; padding: .8rem 0 !important; }
+  .row .ico { width: 34px; height: 34px; flex: none; border-width: 1.2px; }
+  .row .ico svg { width: 16px; height: 16px; }
+  .row .k { font-size: .64rem; letter-spacing: .12em; }
+  .row .v { font-size: .9rem; line-height: 1.25; overflow-wrap: normal; word-break: keep-all; }
+  .row button, .row .wa { font-size: .8rem; padding: .42rem .8rem; white-space: nowrap; }
+}
+.group > summary { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + .5rem); }
+.toc { margin: 1.6rem 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .55rem; font-size: .85rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.toc a { color: var(--navy); text-decoration: none; padding: .6rem 1.1rem; border-radius: 999px; background: rgba(30, 22, 80, .08); border: 1.5px solid rgba(30, 22, 80, .35); transition: background .15s, color .15s; }
+.toc a:hover, .toc a:focus-visible { background: var(--navy); color: #FFFFFF; border-color: var(--navy); }
+.toc span { display: none; }
+@media (max-width: 560px) { .toc { gap: .45rem; font-size: .78rem; } .toc a { padding: .55rem .95rem; } }
+.end-book { margin: .6rem 0 0; }
+.cover-in > .wm-l { -webkit-mask-image: linear-gradient(90deg, #000 60%, transparent 100%); mask-image: linear-gradient(90deg, #000 60%, transparent 100%); }
+.cover-in > .wm-r { -webkit-mask-image: linear-gradient(270deg, #000 60%, transparent 100%); mask-image: linear-gradient(270deg, #000 60%, transparent 100%); }
+.cover-in > .wm { width: 60%; }
+footer { margin-top: 4rem; text-align: center; display: grid; justify-items: center; gap: .6rem; }
+.end-staff { position: relative; width: 100%; height: 33px; margin-bottom: 1rem; background: repeating-linear-gradient(180deg, var(--staff) 0 1px, transparent 1px 8px); }
+.end-staff span { position: absolute; top: 0; height: 33px; background: var(--fg); }
+.end-staff .bar { left: 0; width: 2px; }
+.end-staff .clef { left: 8px; top: -19px; height: auto; background: none; font-family: "Noto Music", "Segoe UI Symbol", serif; font-size: 52px; line-height: 1; color: var(--fg); }
+.end-staff .time { left: 50px; background: none; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--display); font-size: 19px; line-height: 16px; color: var(--fg); }
+.end-staff .time span { position: static; height: auto; background: none; }
+.end-staff .fin1 { right: 0; width: 6px; }
+.end-staff .fin2 { right: 10px; width: 2px; }
+.end-title { margin: 0; font-family: var(--display); font-style: italic; font-size: clamp(1.8rem, 5vw, 2.4rem); }
+.end-note { margin: 0; font-size: .85rem; color: var(--muted); }
+
+@media (max-width: 560px) {
+  .job { grid-template-columns: 1fr; gap: .2rem; }
+  .cover-in { padding: 2.25rem 1rem; }
+  .cover-in > .wm { opacity: .12; }
+}
+
+.viewer { position: fixed; inset: 0; z-index: 50; background: rgba(8, 11, 16, .92); display: grid; grid-template-rows: auto 1fr auto; gap: .5rem;
+  padding: calc(env(safe-area-inset-top, 0px) + .75rem) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + .75rem) max(16px, env(safe-area-inset-left, 0px)); }
+.viewer[hidden] { display: none !important; }
+.viewer-bar { display: flex; justify-content: flex-end; }
+.viewer-close { font: inherit; font-weight: 600; background: #fff; color: #16202B; border: 0; padding: .45rem 1rem; cursor: pointer; }
+.viewer-img { min-height: 0; display: grid; place-items: center; overflow: auto; }
+.viewer-img img { max-width: 100%; max-height: 100%; object-fit: contain; background: #fff; }
+.viewer-cap { color: #E5E9EE; font-size: .9rem; text-align: center; margin: 0; }
+
+.book-cta { margin: .4rem 0 0; }
+.book-btn { display: inline-block; font-weight: 600; text-decoration: none; background: var(--navy); color: #FFFFFF; padding: .7rem 1.4rem; border-radius: 999px; }
+.book-btn:hover { background: var(--accent); }
+.book { position: fixed; inset: 0; z-index: 40; background: var(--bg); overflow-y: auto;
+  padding: calc(env(safe-area-inset-top, 0px) + 1rem) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 2rem) max(16px, env(safe-area-inset-left, 0px)); }
+.book[hidden] { display: none !important; }
+.book-head { max-width: 64rem; margin: 0 auto 1.25rem; display: flex; align-items: end; justify-content: space-between; gap: 1rem; }
+.book-head h2 { margin: 0; font-size: clamp(2rem, 7vw, 3.25rem); font-weight: 400; }
+.book-head h2::before, .book-head h2::after { display: none; }
+.book-head .role { margin: 0 0 .3rem; }
+.book-head .viewer-close { background: var(--fg); color: var(--bg); }
+.book-grid { max-width: 64rem; margin: 0 auto; columns: 2 18rem; column-gap: 12px; }
+.book-grid figure { margin: 0 0 12px; break-inside: avoid; display: grid; gap: .35rem; }
+.book-grid a { display: block; }
+.book-grid img { display: block; width: 100%; height: auto; background: var(--line); }
+.book-grid figcaption { font-family: var(--mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+.job[hidden] { display: none !important; }
+.more-btn { margin-top: 1.4rem; font: inherit; font-size: .9rem; font-weight: 600; background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: .45rem 1rem; cursor: pointer; }
+.more-btn:hover { background: var(--accent); color: var(--surface); }
+.more-btn .opened, .more-btn[aria-expanded="true"] .closed { display: none; }
+.more-btn[aria-expanded="true"] .opened { display: inline; }
+
+.certs[hidden] { display: none !important; }
+.soft-btn { justify-self: center; margin-top: .8rem; font: inherit; font-size: .88rem; font-weight: 600; color: var(--navy); cursor: pointer;
+  background: rgba(30, 22, 80, .08); border: 1px solid rgba(30, 22, 80, .3);
+  border-radius: 999px; padding: .4rem 1.1rem; backdrop-filter: blur(4px); transition: background .15s; }
+.edu .soft-btn span { color: inherit; font-size: inherit; }
+#more-jobs { display: block; margin: 1.4rem auto 0; }
+.soft-btn:hover { background: rgba(30, 22, 80, .16); }
+.soft-btn .opened, .soft-btn[aria-expanded="true"] .closed { display: none; }
+.soft-btn[aria-expanded="true"] .opened { display: inline; }
+
+.item[hidden] { display: none !important; }
+.more-row { display: grid; justify-items: center; padding: .4rem 1.2rem 1rem; border-top: 1px solid var(--line); }
+.more-row .soft-btn span { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="cover">
+      <div class="cover-in">
+        <img class="wm wm-l" src="fotos/marca-guitarra.jpg" alt="" aria-hidden="true">
+        <img class="wm wm-r" src="fotos/marca-mambako.jpg" alt="" aria-hidden="true">
+        <div class="staff-notes" aria-hidden="true">
+          <i style="left: 10%; top: 40px; background: #1E1650;"></i>
+          <i style="left: 28%; top: 24px; background: #E5338B;"></i>
+          <i style="left: 46%; top: 8px; background: #E0B21A;"></i>
+          <i style="left: 64%; top: 32px; background: #19B3A6;"></i>
+          <i style="left: 82%; top: 16px; background: #7A2E2E;"></i>
+        </div>
+        <p class="role">Programa · Temporada 2026</p>
+        <h1>Jim Edward<br><em>Nieto Galeano</em></h1>
+        <p class="instr">Guitarra · Percusión · Voz</p>
+        <p class="lede">Docente de música y director de ensambles en Bogotá. Clases para niños, jóvenes y adultos, dirección de coro y percusión, transcripción y arreglos.</p>
+        <p class="book-cta"><a href="#book" class="book-btn" id="open-book">Ver book de fotos</a></p>
+      </div>
+    </div>
+  </header>
+  <nav class="toc" aria-label="Secciones"><a href="#experiencia">Experiencia</a><span aria-hidden="true">·</span><a href="#escenarios">Escenarios</a><span aria-hidden="true">·</span><a href="#habilidades">Habilidades</a><span aria-hidden="true">·</span><a href="#formacion">Formación</a><span aria-hidden="true">·</span><a href="#contacto">Contacto</a></nav>
+
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <ol class="jobs">
+      <li class="job"><div class="dates">Ene 2026 – <span class="live">hoy</span></div><div><h3>Director musical, grupo de alabanza</h3><p class="org">Asociación Católica Cristo Liberador</p><p>Transcribo, arreglo y enseño el repertorio para batería, piano, guitarra y voces.</p></div></li>
+      <li class="job"><div class="dates">Jul 2024 – <span class="live">hoy</span></div><div><h3>Artista intérprete</h3><p class="org">Agrupación artística Mambako</p><p>Toco el trisurdo en formato batucada, con música y danza, en festivales, eventos y contrataciones privadas.</p></div></li>
+      <li class="job extra" hidden><div class="dates">Jun 2025 – 2026</div><div><h3>Ingeniero de sonido en vivo</h3><p class="org">Colectivo Cultural Caminito Engativeño y Festival Cultural Faunos</p><p>Montaje de equipos, prueba de sonido y mezcla durante las presentaciones.</p></div></li>
+      <li class="job extra" hidden><div class="dates">May 2024 – Dic 2025</div><div><h3>Profesor de música</h3><p class="org">Escuela Musical Faunos</p><p>Clases individuales y grupales de guitarra, piano, técnica vocal, percusión e iniciación musical.</p></div></li>
+      <li class="job extra" hidden><div class="dates">Ago – Dic 2024</div><div><h3>Director de coro infantil</h3><p class="org">Escuela Musical Faunos</p><p>Audición, selección y dirección de niños de 5 a 14 años para la temporada navideña.</p></div></li>
+      <li class="job extra" hidden><div class="dates">Dic 2020 – Jul 2024</div><div><h3>Director</h3><p class="org">Batucada Clown, grupo itinerante</p><p>Repertorio de rock, baladas, folclor colombiano y música navideña para vientos y percusión, con puesta en escena clown.</p></div></li>
+      <li class="job extra" hidden><div class="dates">Dic 2023 – Jul 2024</div><div><h3>Artista intérprete y formador</h3><p class="org">Barbukana</p><p>Intérprete del repertorio y formador en música, baile y teatro para los grupos de iniciación.</p></div></li>
+      <li class="job extra" hidden><div class="dates">2018</div><div><h3>Profesor de guitarra</h3><p class="org">George Washington School · Academia Musical En Sus Manos</p><p>Cursos vacacionales para niños de 10 a 15 años.</p></div></li>
+    </ol>
+    <button type="button" class="soft-btn" id="more-jobs" aria-expanded="false" aria-controls="experiencia"><span class="closed">Ver más experiencia (6) ▾</span><span class="opened">Ver menos ▴</span></button>
+  </section>
+
+  <section id="escenarios">
+    <h2>Escenarios</h2>
+    <div class="groups">
+
+      <details class="group" id="mambako">
+        <summary>
+          <span class="when">2024 – hoy · 11 eventos</span>
+          <span class="gname">Mambako</span>
+          <span class="where">Agrupación de batucada · Intérprete de trisurdo</span>
+          <span class="toggle" aria-hidden="true"><span class="closed">Ver presentaciones ▾</span><span class="opened">Ocultar ▴</span></span>
+        </summary>
+        <ul class="items">
+          <li class="item feature">
+            <details id="estereo">
+            <summary>
+              <span class="when">Mar 2025 · Mar 2026</span><span class="what">Festival Estéreo Picnic</span>
+              <span class="toggle" aria-hidden="true"><span class="closed">Ver fotos y videos ▾</span><span class="opened">Ocultar ▴</span></span>
+            </summary>
+            <div class="feature-body">
+              <div class="links">
+                <a class="ig" href="https://www.instagram.com/p/DedINkrNAQZ/" target="_blank" rel="noopener">Publicación en Instagram ↗</a>
+                <a class="ig" href="https://www.instagram.com/reel/DWki8KdDKvd/" target="_blank" rel="noopener">Video 1 (reel) ↗</a>
+                <a class="ig" href="https://www.instagram.com/reel/DHwC_wkJDqO/" target="_blank" rel="noopener">Video 2 (reel) ↗</a>
+              </div>
+              <div class="photos">
+                <figure class="clip"><video controls playsinline preload="none" poster="videos/mambako-estereo-picnic-2026.jpg" src="videos/mambako-estereo-picnic-2026.mp4"></video><figcaption>Mambako en el Festival Estéreo Picnic 2026</figcaption></figure>
+                <a href="fotos/estereo-picnic-1.jpg" target="_blank" rel="noopener"><img src="fotos/estereo-picnic-1.jpg" alt="Jim en camerino con el vestuario de Mambako: capa de flecos brillantes y máscara con forma de ojo" loading="lazy"></a>
+                <a href="fotos/estereo-picnic-2.jpg" target="_blank" rel="noopener"><img src="fotos/estereo-picnic-2.jpg" alt="Integrante de Mambako con vestuario de flecos entre los árboles iluminados del festival" loading="lazy"></a>
+                <a href="fotos/estereo-picnic-3.jpg" target="_blank" rel="noopener"><img src="fotos/estereo-picnic-3.jpg" alt="Jim y una compañera de Mambako sonriendo frente a la rueda de Chicago del Festival Estéreo Picnic" loading="lazy"></a>
+              </div>
+            </div>
+            </details>
+          </li>
+          <li class="item feature">
+            <details id="vilma">
+            <summary>
+              <span class="when">Nov 2025</span><span class="what">Concierto de Vilma Palma e Vampiros · Movistar Arena</span>
+              <span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span>
+            </summary>
+            <div class="feature-body">
+              <div class="links"><a class="ig" href="https://www.instagram.com/reel/DRgIxloj--x/" target="_blank" rel="noopener">Video en Instagram (reel) ↗</a></div>
+            </div>
+            </details>
+          </li>
+          <li class="item feature">
+            <details id="pacifico">
+            <summary>
+              <span class="when">Oct 2025</span><span class="what">Encuentro de Jóvenes de la Alianza del Pacífico · Palacio de los Deportes</span>
+              <span class="where">Performance «Conjuro del cambio»</span>
+              <span class="toggle" aria-hidden="true"><span class="closed">Ver video, publicación y certificado ▾</span><span class="opened">Ocultar ▴</span></span>
+            </summary>
+            <div class="feature-body">
+              <div class="links"><a class="ig" href="https://www.instagram.com/p/DRTN5nvjRMo/?img_index=4" target="_blank" rel="noopener">Publicación en Instagram ↗</a></div>
+              <div class="photos"><figure class="clip"><video controls playsinline preload="none" poster="videos/mambako-alianza-pacifico-2025.jpg" src="videos/mambako-alianza-pacifico-2025.mp4"></video><figcaption>«Conjuro del cambio» · Encuentro de Jóvenes de la Alianza del Pacífico 2025</figcaption></figure></div>
+              <figure class="cert">
+                <a href="docs/certificado-alianza-pacifico.jpg" target="_blank" rel="noopener"><img src="docs/certificado-alianza-pacifico.jpg" alt="Certificado de participación otorgado por Mambako Iyi Ayi Li SAS a Jim Edward Nieto Galeano por el performance Conjuro del cambio en el Encuentro de Jóvenes de la Alianza del Pacífico, Bogotá, 30 de octubre de 2025" loading="lazy"></a>
+                <figcaption>Certificado de participación · Mambako Iyi Ayi Li SAS</figcaption>
+              </figure>
+            </div>
+            </details>
+          </li>
+          <li class="more-row"><button type="button" class="soft-btn" id="more-mambako" aria-expanded="false"><span class="closed">Ver más presentaciones (8) ▾</span><span class="opened">Ver menos ▴</span></button></li>
+          <li class="item mk-extra" hidden><span class="when">Oct 2025</span><span class="what">Lagoon Fest</span></li>
+          <li class="item mk-extra" hidden><span class="when">Jun 2025</span><span class="what">Encuentro Gastronómico San Felipe</span></li>
+          <li class="item mk-extra" hidden><span class="when">Feb 2025</span><span class="what">Disparate Exótico, Varieté Maratónica</span></li>
+          <li class="item mk-extra" hidden><span class="when">Ene 2025</span><span class="what">«En Transmi pasan cosas buenas»</span></li>
+          <li class="item mk-extra" hidden><span class="when">Dic 2024</span><span class="what">Festival Un Grito por el Agua · San Gil, Santander</span></li>
+          <li class="item mk-extra" hidden><span class="when">Nov 2024</span><span class="what">Final Copa BetPlay · Villavicencio, Meta</span></li>
+          <li class="item mk-extra" hidden><span class="when">Nov 2024</span><span class="what">Dorado, Espíritus de Luz</span></li>
+          <li class="item mk-extra" hidden><span class="when">Nov 2024 · 2025</span><span class="what">Festival de Teatro de Tenjo, Cundinamarca</span></li>
+        </ul>
+      </details>
+
+      <details class="group" id="clave-de-sol">
+        <summary>
+          <span class="when">2025 – 2026 · 6 videos y 1 foto</span>
+          <span class="gname">Festival en Clave de Sol · Colectivo Caminito Engativeño</span>
+          <span class="where">Producción de audio en vivo</span>
+          <span class="toggle" aria-hidden="true"><span class="closed">Ver foto y videos (7) ▾</span><span class="opened">Ocultar ▴</span></span>
+        </summary>
+        <ul class="items">
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">Jun 2025</span><span class="what">Montaje de sonido · Biblioteca Pública Las Ferias</span><span class="toggle" aria-hidden="true"><span class="closed">Ver foto ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><figure class="cert"><a href="fotos/clave-de-sol-las-ferias-2025.jpg" target="_blank" rel="noopener"><img src="fotos/clave-de-sol-las-ferias-2025.jpg" alt="Jim con los brazos abiertos frente a los micrófonos y parlantes que montó en la Biblioteca Pública Las Ferias para Engativá en Clave de Sol 2025" loading="lazy"></a><figcaption>Engativá en Clave de Sol 2025</figcaption></figure></div>
+          </details></li>
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">2025</span><span class="what">Juanda Lozano</span><span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><div class="photos vids"><figure class="clip"><video controls playsinline preload="none" poster="videos/caminito-juanda-lozano-2025.jpg" src="videos/caminito-juanda-lozano-2025.mp4"></video></figure></div></div>
+          </details></li>
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">2025</span><span class="what">El Son del Frailejón</span><span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><div class="photos vids"><figure class="clip"><video controls playsinline preload="none" poster="videos/caminito-son-del-frailejon-2025.jpg" src="videos/caminito-son-del-frailejon-2025.mp4"></video></figure></div></div>
+          </details></li>
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">2025</span><span class="what">Guineo Verde</span><span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><div class="photos vids"><figure class="clip"><video controls playsinline preload="none" poster="videos/caminito-guineo-verde-2025.jpg" src="videos/caminito-guineo-verde-2025.mp4"></video></figure></div></div>
+          </details></li>
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">2026</span><span class="what">Grupo llanero · Cocrea Engativá</span><span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><div class="photos vids"><figure class="clip"><video controls playsinline preload="none" poster="videos/caminito-grupo-llanero-cocrea-2026.jpg" src="videos/caminito-grupo-llanero-cocrea-2026.mp4"></video></figure></div></div>
+          </details></li>
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">2026</span><span class="what">Takiguaira</span><span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><div class="photos vids"><figure class="clip"><video controls playsinline preload="none" poster="videos/caminito-takiguaira-2026.jpg" src="videos/caminito-takiguaira-2026.mp4"></video></figure></div></div>
+          </details></li>
+          <li class="item feature"><details class="acc" name="clave-de-sol">
+            <summary><span class="when">2026</span><span class="what">Carranwest · Titán Plaza</span><span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span></summary>
+            <div class="feature-body"><div class="photos vids"><figure class="clip"><video controls playsinline preload="none" poster="videos/caminito-carranwest-titan-plaza-2026.jpg" src="videos/caminito-carranwest-titan-plaza-2026.mp4"></video></figure></div></div>
+          </details></li>
+        </ul>
+      </details>
+
+      <details class="group" id="faunos">
+        <summary>
+          <span class="when">2024 – 2025 · 3 actividades</span>
+          <span class="gname">Escuela Musical Faunos</span>
+          <span class="where">Dirección de coro infantil y sonido en vivo</span>
+          <span class="toggle" aria-hidden="true"><span class="closed">Ver presentaciones ▾</span><span class="opened">Ocultar ▴</span></span>
+        </summary>
+        <ul class="items">
+          <li class="item feature">
+            <details id="origenes">
+            <summary>
+              <span class="when">Dic 2024</span><span class="what">Orígenes, Show Faunos · Teatro Ditirambo</span>
+              <span class="where">Dirección de coro e intérprete, y temporada navideña en el Teatro de la Universidad Católica</span>
+              <span class="toggle" aria-hidden="true"><span class="closed">Ver fotos y videos ▾</span><span class="opened">Ocultar ▴</span></span>
+            </summary>
+            <div class="feature-body">
+              <div class="photos">
+                <figure class="clip">
+                  <video controls playsinline preload="none" poster="videos/origenes-poster.jpg" src="videos/origenes-coro-faunos.mp4"></video>
+                  <figcaption>Coro infantil Faunos en «Orígenes», Teatro Ditirambo</figcaption>
+                </figure>
+                <figure class="clip">
+                  <video controls playsinline preload="none" poster="videos/catolica-poster.jpg" src="videos/coro-universidad-catolica.mp4"></video>
+                  <figcaption>Presentación navideña del coro en el Teatro de la Universidad Católica de Colombia</figcaption>
+                </figure>
+                <a href="fotos/origenes-1.jpg" target="_blank" rel="noopener"><img src="fotos/origenes-1.jpg" alt="Niños del coro vestidos de blanco con coronas de hojas, junto a tres artistas con alas de colores en el escenario de Orígenes" loading="lazy"></a>
+                <a href="fotos/origenes-2.jpg" target="_blank" rel="noopener"><img src="fotos/origenes-2.jpg" alt="Jim vestido de blanco con los niños del coro al final de la función de Orígenes" loading="lazy"></a>
+              </div>
+            </div>
+            </details>
+          </li>
+          <li class="item feature">
+            <details id="ensayo-coro">
+            <summary>
+              <span class="when">Ago – Dic 2024</span><span class="what">Ensayo del coro infantil</span><span class="where">Dirección de coro</span>
+              <span class="toggle" aria-hidden="true"><span class="closed">Ver video ▾</span><span class="opened">Ocultar ▴</span></span>
+            </summary>
+            <div class="feature-body">
+              <div class="photos">
+                <figure class="clip"><video controls playsinline preload="none" poster="videos/faunos-ensayo-coro.jpg" src="videos/faunos-ensayo-coro.mp4"></video><figcaption>Ensayo del coro infantil · Escuela Musical Faunos</figcaption></figure>
+              </div>
+            </div>
+            </details>
+          </li>
+          <li class="item feature">
+            <details id="festival-faunos">
+            <summary>
+              <span class="when">Jul 2025</span><span class="what">Festival Cultural Faunos</span><span class="where">Producción de audio en vivo</span>
+              <span class="toggle" aria-hidden="true"><span class="closed">Ver videos ▾</span><span class="opened">Ocultar ▴</span></span>
+            </summary>
+            <div class="feature-body">
+              <div class="photos vids">
+                <figure class="clip"><video controls playsinline preload="none" poster="videos/faunos-banda-de-marcha-2025.jpg" src="videos/faunos-banda-de-marcha-2025.mp4"></video><figcaption>Banda de marcha Faunos · 2025</figcaption></figure>
+                <figure class="clip"><video controls playsinline preload="none" poster="videos/faunos-bullerengue-2025.jpg" src="videos/faunos-bullerengue-2025.mp4"></video><figcaption>Grupo de folclor, bullerengue · 2025</figcaption></figure>
+              </div>
+            </div>
+            </details>
+          </li>
+        </ul>
+      </details>
+
+      <details class="group" id="coros">
+        <summary>
+          <span class="when">2015 – 2018 · 5 conciertos</span>
+          <span class="gname">Coros institucionales</span>
+          <span class="where">Universidad INCCA de Colombia y Universidad de Cundinamarca</span>
+          <span class="toggle" aria-hidden="true"><span class="closed">Ver conciertos y documentos ▾</span><span class="opened">Ocultar ▴</span></span>
+        </summary>
+        <ul class="items">
+          <li class="item"><span class="when">Sep 2018</span><span class="what">Festival Internacional de Música Sacra de Bogotá</span><span class="where">Coro Universidad de Cundinamarca</span></li>
+          <li class="item"><span class="when">Abr 2016</span><span class="what">Sinfonía n.º 2 «Resurrección», Gustav Mahler</span><span class="where">Con la Orquesta Sinfónica y el Coro de la Universidad Nacional, bajo la dirección de Guerassim Voronkov · Auditorio León de Greiff y Auditorio de la Universidad Jorge Tadeo Lozano</span><span class="links"><a class="ig" href="docs/afiche-sinfonia-2-mahler.jpg" target="_blank" rel="noopener">Ver afiche</a></span></li>
+          <li class="item"><span class="when">Nov 2015</span><span class="what">«Magnificat» · Concierto 60 años Universidad INCCA</span><span class="where">Teatro de Bogotá · Dirección general de Yolmer Hurtado Ramírez</span><span class="links"><a class="ig" href="docs/afiche-magnificat-teatro-de-bogota-2015.jpg" target="_blank" rel="noopener">Ver afiche</a></span></li>
+          <li class="item"><span class="when">May 2015</span><span class="what">«Magnificat» (Rutter) y «Estaciones porteñas» (Piazzolla)</span><span class="where">Academia Charlot</span><span class="links"><a class="ig" href="docs/afiche-estaciones-portenas-2015.jpg" target="_blank" rel="noopener">Ver afiche</a></span></li>
+          <li class="item"><span class="when">May 2015</span><span class="what">XXIV Festival Internacional de Coros Integración</span><span class="where">Coro Institucional Universidad INCCA de Colombia</span><span class="links"><a class="ig" href="docs/certificado-festival-coros-integracion-2015.jpg" target="_blank" rel="noopener">Ver certificado</a></span></li>
+        </ul>
+      </details>
+
+      <details class="group" id="otras">
+        <summary>
+          <span class="when">2023 – 2024 · 2 presentaciones</span>
+          <span class="gname">Otras agrupaciones</span>
+          <span class="where">Barbukana y Dueto Resplandor</span>
+          <span class="toggle" aria-hidden="true"><span class="closed">Ver presentaciones ▾</span><span class="opened">Ocultar ▴</span></span>
+        </summary>
+        <ul class="items">
+          <li class="item"><span class="when">May 2024</span><span class="what">Desfile del Día Internacional del Trabajo</span><span class="where">Con Barbukana</span></li>
+          <li class="item"><span class="when">Dic 2023</span><span class="what">Show navideño, Centro Comercial Metrópolis</span><span class="where">Con Dueto Resplandor</span></li>
+        </ul>
+      </details>
+
+    </div>
+  </section>
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div><h3>Instrumentos</h3><ul class="tags"><li>Guitarra</li><li>Piano</li><li>Bajo</li><li>Percusión</li><li>Clarinete</li><li>Voz</li></ul></div>
+      <div><h3>Software</h3><ul class="tags"><li>Ableton Live 11</li><li>MuseScore</li><li>Finale</li><li>Kdenlive</li></ul></div>
+      <div><h3>Dirección</h3><ul class="tags"><li>Cuerdas pulsadas</li><li>Percusión afrobrasileña</li><li>Coro</li></ul></div>
+    </div>
+  </section>
+
+  <section id="formacion">
+    <h2>Formación</h2>
+    <ul class="edu">
+      <li><strong>Maestro en Música · Universidad de Cundinamarca</strong><span>Plan de estudios terminado, pendiente de grado</span></li>
+      <li><strong>SENA · Certificados de competencia laboral</strong><span>Nivel intermedio en las tres normas · 2026</span>
+        <button type="button" class="soft-btn" id="more-certs" aria-expanded="false" aria-controls="sena-certs"><span class="closed">Ver certificados (3) ▾</span><span class="opened">Ocultar certificados ▴</span></button>
+        <ul class="certs" id="sena-certs" hidden>
+          <li><span>Ejecutar instrumentos de percusión de acuerdo con técnicas de interpretación y tipo de género musical</span><a class="ig" href="docs/certificado-sena-percusion.jpg" target="_blank" rel="noopener">Ver certificado</a></li>
+          <li><span>Interpretar instrumentos de cuerda pulsada de acuerdo con técnicas y géneros musicales</span><a class="ig" href="docs/certificado-sena-cuerda.jpg" target="_blank" rel="noopener">Ver certificado</a></li>
+          <li><span>Cantar obras de acuerdo con técnicas y géneros musicales</span><a class="ig" href="docs/certificado-sena-canto.jpg" target="_blank" rel="noopener">Ver certificado</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact">
+      <div class="row"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span><span class="kv"><span class="k">Correo</span><span class="v" id="mail">jeng0816@hotmail.com</span></span><button type="button" data-copy="mail">Copiar</button></div>
+      <div class="row"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></span><span class="kv"><span class="k">Celular</span><span class="v" id="tel">314 407 2227</span></span><button type="button" data-copy="tel">Copiar</button></div>
+      <div class="row"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.7L4 20z"></path><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-.9-.4-1.6-1.1-2-2l.8-1-1-2L9 9.5z"></path></svg></span><span class="kv"><span class="k">WhatsApp</span><span class="v">Escríbeme directamente</span></span><a class="wa" href="https://wa.me/573144072227?text=Hola%20Jim%2C%20vi%20tu%20portafolio%20y%20quiero%20contactarte." target="_blank" rel="noopener">Abrir chat ↗</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="end-staff" aria-hidden="true"><span class="bar"></span><span class="clef">𝄞</span><span class="time"><span>4</span><span>4</span></span><span class="fin2"></span><span class="fin1"></span></div>
+    <p class="end-title">Contrataciones y clases</p>
+    <p class="end-book"><a href="#book" class="book-btn" data-open-book>Ver book de fotos</a></p>
+    <p class="end-note">Bogotá, Colombia · 2026</p>
+  </footer>
+</div>
+
+
+<div class="book" id="book" hidden role="dialog" aria-modal="true" aria-labelledby="book-title">
+  <div class="book-head">
+    <div><p class="role">Jim Edward Nieto Galeano</p><h2 id="book-title">Book de fotos</h2></div>
+    <button type="button" class="viewer-close" id="close-book">Cerrar ✕</button>
+  </div>
+  <div class="book-grid">
+      <figure><a href="book/book-1.jpg"><img src="book/book-1.jpg" alt="Jim tocando el surdo con máscara y vestuario de colores de Mambako" loading="lazy"></a><figcaption>Con Mambako, batucada en la calle</figcaption></figure>
+      <figure><a href="book/book-2.jpg"><img src="book/book-2.jpg" alt="Jim saltando con las baquetas en las manos, con máscara y vestuario de Mambako" loading="lazy"></a><figcaption>Con Mambako</figcaption></figure>
+      <figure><a href="book/book-3.jpg"><img src="book/book-3.jpg" alt="Jim tocando el surdo en un desfile con la comparsa de Mambako" loading="lazy"></a><figcaption>Con Mambako, comparsa</figcaption></figure>
+      <figure><a href="book/book-4.jpg"><img src="book/book-4.jpg" alt="Jim levantando la pierna con el surdo en la mano, con maquillaje y chaleco dorado" loading="lazy"></a><figcaption>Con Mambako</figcaption></figure>
+      <figure><a href="book/book-5.jpg"><img src="book/book-5.jpg" alt="Jim sonriendo en un desfile, con hombreras doradas y flecos de colores" loading="lazy"></a><figcaption>Con Mambako, desfile</figcaption></figure>
+      <figure><a href="book/book-6.jpg"><img src="book/book-6.jpg" alt="Jim tocando guitarra acústica sentado frente al micrófono" loading="lazy"></a><figcaption>Guitarra</figcaption></figure>
+      <figure><a href="book/book-7.jpg"><img src="book/book-7.jpg" alt="Jim sonriendo con la guitarra acústica en un concierto íntimo" loading="lazy"></a><figcaption>Guitarra</figcaption></figure>
+      <figure><a href="book/book-8.jpg"><img src="book/book-8.jpg" alt="Dos guitarristas y un percusionista en cajón tocando en un auditorio" loading="lazy"></a><figcaption>Ensamble de guitarras y cajón</figcaption></figure>
+  </div>
+</div>
+
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="Documento ampliado">
+  <div class="viewer-bar"><button type="button" class="viewer-close" id="viewer-close">Cerrar ✕</button></div>
+  <div class="viewer-img"><img id="viewer-img" alt=""></div>
+  <p class="viewer-cap" id="viewer-cap"></p>
+</div>
+<script>
+(function () {
+  var tracks = document.querySelectorAll('.steps');
+  tracks.forEach(function (t) {
+    var p = t.getAttribute('data-p');
+    for (var i = 0; i < 16; i++) {
+      var d = document.createElement('i');
+      if (p[i] === 'x') d.className = (t.parentNode.querySelector('b').textContent === 'Surdo') ? 'acc' : 'on';
+      t.appendChild(d);
+    }
+  });
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    var step = 0;
+    setInterval(function () {
+      tracks.forEach(function (t) {
+        var cells = t.children;
+        for (var j = 0; j < cells.length; j++) cells[j].classList.remove('now');
+        var c = cells[step];
+        if (c && (c.classList.contains('on') || c.classList.contains('acc'))) { void c.offsetWidth; c.classList.add('now'); }
+      });
+      step = (step + 1) % 16;
+    }, 150);
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy'));
+      var txt = el.textContent;
+      var done = function () { b.textContent = 'Copiado'; setTimeout(function () { b.textContent = 'Copiar'; }, 1600); };
+      var fallback = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+      try { navigator.clipboard.writeText(txt).then(done, fallback); } catch (e) { fallback(); }
+    });
+  });
+})();
+
+(function () {
+  var v = document.getElementById('viewer'), img = document.getElementById('viewer-img'), cap = document.getElementById('viewer-cap'), last = null;
+  function close() { v.hidden = true; img.removeAttribute('src'); document.body.style.overflow = document.getElementById('book').hidden ? '' : 'hidden'; if (last) last.focus(); }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="docs/"], a[href^="fotos/"], a[href^="book/"]');
+    if (!a) return;
+    e.preventDefault(); last = a;
+    var inner = a.querySelector('img');
+    var row = a.closest('.item, .certs li, figure');
+    var label = inner ? inner.alt : (row ? (row.querySelector('.what') || row.querySelector('span') || {}).textContent : '');
+    img.src = a.getAttribute('href'); img.alt = label || ''; cap.textContent = label || '';
+    v.classList.toggle('small', !!a.closest('#coros'));
+    v.hidden = false; document.body.style.overflow = 'hidden';
+    document.getElementById('viewer-close').focus();
+  });
+  document.getElementById('viewer-close').addEventListener('click', close);
+  v.addEventListener('click', function (e) { if (e.target === v || e.target.classList.contains('viewer-img')) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !v.hidden) { e.stopImmediatePropagation(); close(); } });
+})();
+
+(function () {
+  var book = document.getElementById('book'), opener = document.getElementById('open-book');
+  function open() { book.hidden = false; book.scrollTop = 0; document.body.style.overflow = 'hidden'; document.getElementById('close-book').focus(); }
+  function shut() { book.hidden = true; document.body.style.overflow = ''; opener.focus(); }
+  document.querySelectorAll('#open-book, [data-open-book]').forEach(function (el) { el.addEventListener('click', function (e) { e.preventDefault(); opener = el; open(); }); });
+  document.querySelectorAll('.toc a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var t = document.querySelector(a.getAttribute('href'));
+      if (!t) return;
+      e.preventDefault();
+      var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      t.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    });
+  });
+  document.getElementById('close-book').addEventListener('click', shut);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !book.hidden && document.getElementById('viewer').hidden) shut(); });
+  if (location.hash === '#book') open();
+})();
+(function () {
+  var groups = Array.prototype.slice.call(document.querySelectorAll('#escenarios details.group'));
+  groups.forEach(function (g) {
+    g.addEventListener('toggle', function () {
+      if (g.open) {
+        var hadOther = false;
+        groups.forEach(function (o) { if (o !== g && o.open) { o.open = false; hadOther = true; } });
+        var sum = g.querySelector('summary');
+        var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        requestAnimationFrame(function () {
+          var top = sum.getBoundingClientRect().top;
+          if (hadOther || top < 0 || top > window.innerHeight * 0.35) sum.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+        });
+      } else {
+        g.querySelectorAll('video').forEach(function (v) { try { v.pause(); } catch (e) {} });
+      }
+    });
+  });
+  document.querySelectorAll('#escenarios .items').forEach(function (list) {
+    var accs = Array.prototype.slice.call(list.querySelectorAll(':scope > li > details'));
+    accs.forEach(function (d) {
+      d.addEventListener('toggle', function () {
+        if (d.open) {
+          var hadOther = false;
+          accs.forEach(function (o) { if (o !== d && o.open) { o.open = false; hadOther = true; } });
+          var sum = d.querySelector('summary');
+          var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          requestAnimationFrame(function () {
+            var top = sum.getBoundingClientRect().top;
+            if (hadOther || top < 0 || top > window.innerHeight * 0.35) sum.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+          });
+        } else {
+          d.querySelectorAll('video').forEach(function (v) { try { v.pause(); } catch (e) {} });
+        }
+      });
+    });
+  });
+})();
+
+(function () {
+  var btn = document.getElementById('more-jobs');
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') !== 'true';
+    document.querySelectorAll('.job.extra').forEach(function (li) { li.hidden = !open; });
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!open) {
+      var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.getElementById('experiencia').scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    }
+  });
+})();
+
+(function () {
+  var btn = document.getElementById('more-certs'), list = document.getElementById('sena-certs');
+  btn.addEventListener('click', function () {
+    var open = list.hidden; list.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+
+(function () {
+  var btn = document.getElementById('more-mambako');
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') !== 'true';
+    document.querySelectorAll('.mk-extra').forEach(function (li) { li.hidden = !open; });
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>
+</body>
+</html>
